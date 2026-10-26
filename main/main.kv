@@ -1,0 +1,11 @@
+#:kivy 2.1.0
+#:import FadeTransition kivy.uix.screenmanager.FadeTransition
+#:import LoginScreen login.LoginScreen
+#:import LoadingScreen loading_screen.LoadingScreen
+
+<ScreenManager>:
+    transition: FadeTransition(duration=0.5)
+    LoadingScreen:
+        name: "loading"
+    LoginScreen:
+        name: "login"
